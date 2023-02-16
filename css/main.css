@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+html, body {
+	scroll-behavior: smooth;
+	background-color: #000000;	
+}
+
+h1, p, pre{
+	color: white;
+	font-family: poppins;
+}
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+:root{
+	--banner: url("/Images/Kang.jpg");
+}
+
+
+/* .poster{
+	position: relative;
+	background-image: url("/Images/Kang.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	opacity: 0.8;
+	mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+	box-shadow: 0 0 80px 20px #292929 inset;	
+	width: 100%;
+	height: 65vh;;
+	margin-bottom: 20px;
+} */
+
+
+
+#hero{
+	background-color: #000000;
+	height: 65vh;
+	position: relative;
+	margin-bottom: 20px;	
+}
+
+#hero::before{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: var(--banner);
+	background-repeat: no-repeat;
+	background-position: 0% 35%;
+	background-size: 100% auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	-webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 1) 0%,
+												  rgb(0, 0, 1) 10%,
+												  rgba(0, 0, 0, 0) 100%);		
+}
+
+.top-menu {
+	display: flex;
+	position: absolute;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	width: 100%;
+	padding: 20px 40px;
+	box-sizing: border-box;
+	z-index: 1;
+}
+
+#logo {
+	font-size: 24px;
+	font-weight: bold;
+	margin-right: 105px;
+}
+
+.top-menu button {
+	background-color: transparent;
+	border: none;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 18px;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.2s;
+	
+}
+  
+.top-menu button:hover {
+	background-color: rgba(0, 0, 0, .5);
+	backdrop-filter: blur(1px);
+	
+}
+  
+.top-menu button#sign-in {
+	margin-left: auto;
+}
+
+.header-film-container {
+	position: absolute;
+	align-items: center;
+	display: flex;
+	height: 100%;
+	width: 75%;
+	margin-left: 7%;
+	color: white;
+	font-family: poppins;
+	/* background-color: beige; */
+}
+
+
+.header-film-container > div {
+	/* background-color: red; */
+	padding: 20px;	
+}
+
+#poster {
+	border-radius: 25px;
+	max-width: 15%;
+	height: auto;
+}
+
+#reserve {
+	appearance: none;
+	background-color: transparent;
+	border: 1px solid #ffffff;
+	border-radius: 25px;
+	color: #ffffff;
+	cursor: pointer;
+	padding: 15px 35px;
+	transition: all 0.2s;
+}
+
+#trailer {
+	appearance: none;
+	background-color: transparent;
+	border: 1px solid #ffffff;
+	border-radius: 25px;
+	color: #ffffff;
+	cursor: pointer;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 15px 35px;
+	transition: all 0.2s;
+}
+
+#info {
+	appearance: none;
+	background-color: transparent;
+	border: 1px solid #ffffff;
+	border-radius: 25px;
+	color: #ffffff;
+	cursor: pointer;
+	padding: 15px 35px;
+	transition: all 0.2s;
+}
+
+#info:hover, #trailer:hover, #reserve:hover {
+	border-radius: 20px;
+	backdrop-filter: blur(1px);
+	background-color: rgba(0, 0, 0, 0.5);
+	
+}
+   
+#descripcion{
+	color: white;
+}
+
+
+#hello {
+	position: absolute;
+    display: flex;
+	margin-left: 17%;
+	bottom: 20%;
+    color: white;
+}
+
+section h1{
+	margin-left: 7%;
+}
+
+
+
+.container {
+	display: grid;
+	grid-auto-rows: 300px;
+	grid-template-columns: repeat(5, 200px);
+	background-color: #000000;
+	row-gap: 30px;
+	column-gap: 30px;
+	justify-content: center;
+	align-content: center;
+}
+
+
+.container > div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color:white;
+	border-radius: 5px;
+	background-color: #292929;
+	box-shadow: 0 0 30px 2px rgba(0, 0, 0, .5);
+	overflow: hidden;
+	transition: all 0.2s;
+}
+
+.container > div:hover{
+	scale: 1.03;
+}
+
+.container img{
+	width: auto;
+	height: 100%;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #292929;
+}
+   
+::-webkit-scrollbar-thumb {
+	background: rgba(250, 235, 215, 0.4); /*antiquewhite with 0.4 opacity*/
+	border-radius: 20px;
+}
