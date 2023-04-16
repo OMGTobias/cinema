@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Cine Tobi</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
+	<!-- <link rel="icon" href="images/logo/logo_mps_hr.png"> -->
+	<link rel="stylesheet" href="css/mobile.css">
+
+</head>
+
+<body>
+	<header id="hero">
+		<nav class="top-menu">
+			<div id="logo">Cine Tobi</div>
+			<a id="home" href="index.html">Inicio</a>
+			<a id="movies" href="movies.html">Estrenos</a>
+			<a id="us" href="about.html">Nosotros</a>
+			<a id="sign-in" href="login.html">Iniciar Sesión</a>
+			<div class="hamburger-menu">
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+			</div>
+		</nav>
+
+		<div id="mobile_menu" class="menu_mobile">
+			<a id="home" href="index.html">Inicio</a>
+			<a id="movies" href="movies.html">Estrenos</a>
+			<a id="us" href="about.html">Nosotros</a>
+			<a id="sign-in" href="login.html">Iniciar Sesión</a>
+		</div>
+
+		<div class="filmContainerHeader">
+			<img id="poster" src="Images/Mario2.jpg" alt="Movie Poster">
+			<div>
+				<h1 class="mainMovieTitle"></h1>
+				<ul id="mainMovInfo">
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul id="showingMainMovInfo">
+					<li>
+						<div class="pgRating"></div>
+					</li>
+					<li>
+						<div class="language">ES</div>
+					</li>
+					<li>
+						<div class="quality">Dolby Atmos</div>
+					</li>
+				</ul>
+				<a class="buy" href="antman-y-la-avispa-quantumania.html">Comprar</a>
+				<a class="buy" href="https://www.youtube.com/watch?v=_1f2RLdxQfA&ab_channel=UniversalSpain" target="_blank">Trailer</a>
+				<button id="info">Descripción</button>
+			</div>
+
+			<p id="mainDescription">Con la ayuda de la Princesa Peach, Mario se prepara para enfrentarse al todopoderoso 
+				Bowser para detener sus planes de conquistar el mundo.</p>
+		</div>
+
+		<div class="mobileFilmContainerHeader">
+			<div class="filmName">
+				<h1 class="mainMovieTitle"></h1>
+				<ul id="mainMovInfo">
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul id="showingMainMovInfo">
+					<li>
+						<div class="pgRating"></div>
+					</li>
+					<li>
+						<div class="language">ES</div>
+					</li>
+					<li>
+						<div class="quality">Dolby Atmos</div>
+					</li>
+				</ul>
+			</div>
+			<div class="filmActions">
+				<a class="buy" href="antman-y-la-avispa-quantumania.html">Comprar</a>
+				<a class="buy" href="https://www.youtube.com/watch?v=ZlNFpri-Y40&ab_channel=MarvelEntertainment" target="_blank">Trailer</a>
+			</div>
+		</div>
+	</header>
+<!-- ------------------------- -->
+	 <section id="showcase">
+		<p class="secondTitle" style="margin-left: -30vw;"><span class="boldTopTitle">DESTACADOS</span><br><b>ÚLTIMOS</b> ESTRENOS</p>
+		<div class="nextFilms">
+			<div>
+				<a href="movies/screamvi.html">
+					<img src="Images/screamvi.jpg" alt="Avatar">
+				</a>
+				<p>Scream VI</p>
+				<p>2h 2m | R</p>
+				<a class="buy" href="movies/screamvi.html">COMPRAR ENTRADAS</a>
+			</div>
+			<div>
+				<a href="movies/el-gato-con-botas.html">
+					<img src="Images/Gato.jpg" alt="Gato con Botas">
+				</a>
+				<p>El Gato con Botas: El último deseo</p>
+				<p>1h 40m | PG</p>
+				<a class="buy" href="movies/el-gato-con-botas.html">COMPRAR ENTRADAS</a>
+			</div>
+			<div>
+				<a href="movies/rapidos-y-furiosos-x.html">
+					<img src="Images/Fast.jpg" alt="Rápidos y Furiosos">
+				</a>
+				<p>Rápidos y Furiosos X</p>
+				<p>2h 12m | PG-13</p>
+				<a class="buy" href="movies/rapidos-y-furiosos-x.html">COMPRAR ENTRADAS</a>
+			</div>
+			<div>
+				<a href="movies/creediii.html">
+					<img src="Images/Creed.jpg" alt="Creed III">
+				</a>
+				<p>Creed III</p>
+				<p>1h 57m | PG-13</p>
+				<a class="buy" href="movies/creediii.html">COMPRAR ENTRADAS</a>
+			</div>
+			<div>
+				<p>Más...</p>
+				<a class="allMovies" href="movies.html">TODA LA CARTELERA</a>
+				<a class="commingSoon" href="#comingSoon">PRÓXIMAMENTE</a>
+				<input type="text" class="searchMovie" name="sMovie" placeholder="BUSCAR">
+			</div>
+		</div>
+	</section>
+<!-- ------------------------- -->
+	<section id="comingSoonContainer">
+		<div class="comingSoon">
+			<div>
+				<img src="Images/Guardians.jpg" alt="Guardianes de la Galaxia">
+			</div>
+			<div>
+				<p class="secondTitle"><span class="boldTopTitle">PRÓXIMAMENTE</span><br>Guardianes de la Galaxia vol. 3</p>
+				<br>
+				<p style="margin-bottom: 20px">Star-Lord, aún conmocionado por la pérdida de Gamora, quien debe reunir a su
+					equipo para defender el universo y proteger a uno de
+					los suyos. Una misión que, de no completarse, podría suponer el fin de los Guardianes tal y como los
+					conocemos.</p>
+				<a class="bigBtn">TRAILER</a>
+			</div>
+		</div>	
+	</section>
+<!-- ------------------------- -->
+	<section id="seasonPassContainer">
+		<div class="seasonPass">
+			<div class="left-section">
+
+				<div id="seasonPassTitle">
+					<p class="secondTitle"><span class="boldTopTitle">PARA LOS AUTÉNTICOS FANS</span><br>DESCUBRE <b>MiCINE TOP</b></p>
+				</div>
+				
+				<a class="bigBtn" style="align-self: center; padding: 10px 25px;" href="micinetop.html">SABER MÁS</a>
+				<img src="Images/WhalePoster.jpg" alt="La ballena">
+
+			</div>
+			<div class="middle-section">
+				<img src="Images/WakandaPoster.jpg" alt="Wakanda Forever">
+				<img id="seasonPassDesktopTitleImg" src="Images/AvatarPoster.jpg" alt="Avatar">
+			</div>
+			<div class="right-section">
+				<img src="Images/BarbiePoster.jpg" alt="Barbie">
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div>
+			<h1>Cine Tobi</h1>
+			<p>Diseñado y desarrollado por Tobi</p>
+			<p>GitHub: omgtobias</p>
+			<p>CodePen: omgtobias</p>
+		</div>
+		<div>
+			<h2>Nosotros</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nibh ex, eleifend vel porta ac,
+				porttitor ut augue. Vestibulum blandit nibh nec ante rutrum semper. Aliquam ut dui eget justo.
+			</p>
+		</div>
+		<div>
+			<h2>Info</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nibh ex, eleifend vel porta ac,
+				porttitor ut augue. Vestibulum blandit nibh nec ante rutrum semper. Aliquam ut dui eget justo.
+			</p>
+		</div>
+	</footer>
+
+	<script src="js/index.js"></script>
+</body>
+</html>
